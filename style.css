@@ -1,0 +1,28 @@
+* {
+  border-radius: 0 !important;
+}
+
+.blur-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.status-header {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.status-New { background-color: #000000; }
+.status-Contacted { background-color: #1A73E8; }
+.status-Interested { background-color: #FABB05; color: #000; }
+.status-Not-Interested { background-color: #EA4335; }
+.status-Joined { background-color: #34A853; }
