@@ -11,3 +11,16 @@ async function fetchLeads() {
 }
 
 fetchLeads();
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.getElementById("open-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const popup = document.getElementById("popup");
+
+  openBtn.addEventListener("click", () => {
+    popup.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.add("hidden");
+  });
+});
